@@ -27,13 +27,13 @@ function amountCurrency(item) {
     for (let elem of btnCurrency) {
         elem.addEventListener('click', () => {
             if (elem.getAttribute('data-rate') === item.cc) {
-                rateCurrency = item.rate;
                 exchangeRate(elem);
             }
         });
 
         
         function exchangeRate(elem) {
+            rateCurrency = item.rate;
             output = Math.floor(inputValue / rateCurrency);
             newValue.replaceWith(newValue);
             newValue.innerHTML = `You can buy: ${output} ${elem.textContent}`;
