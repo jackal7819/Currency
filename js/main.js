@@ -32,14 +32,15 @@ function amountCurrency(item) {
             }
         });
 
+        
+        function exchangeRate(elem) {
+            output = Math.floor(inputValue / rateCurrency);
+            newValue.replaceWith(newValue);
+            newValue.innerHTML = `You can buy: ${output} ${elem.textContent}`;
+        }
+        
         let exchange = document.querySelector('.exchange');
         exchange.append(newValue);
         newValue.innerHTML = `You can buy: ${output}`;
     }
-}
-
-function exchangeRate(elem) {
-    output = Math.floor(inputValue / rateCurrency);
-    newValue.replaceWith(newValue);
-    newValue.innerHTML = `You can buy: ${output} ${elem.textContent}`;
 }
