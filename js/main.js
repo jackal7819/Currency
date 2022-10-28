@@ -1,11 +1,11 @@
-let newValue = document.createElement('h4');
-let output = 0;
-
 function amountCurrency() {
-
+    
+    let output = 0;
+    let newValue = document.createElement('h4');
     let input = document.querySelector('#input');
     let inputValue = Number(input.value);
     let btnCurrency = document.querySelectorAll('.exchange__button');
+    
     for (let elem of btnCurrency) {
         elem.addEventListener('click', () => {
             exchangeRate(elem);
