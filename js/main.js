@@ -1,5 +1,5 @@
 let output = 0;
-let newValue = document.createElement('h4');
+let newValue = document.createElement('h3');
 
 function amountCurrency() {
     
